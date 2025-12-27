@@ -1,0 +1,38 @@
+# -----------------------------------------------------------------------------
+# skNodes - Git 属性配置文件
+# -----------------------------------------------------------------------------
+
+# 1. 自动检测文本文件并统一换行符
+# 无论在什么系统下检出，Git 都会尝试将文本文件在仓库中存储为 LF
+* text=auto
+
+# 2. 强制 Python 后端代码使用 LF
+# 这对于在 Linux 服务器或 Colab 上运行 ComfyUI 至关重要
+*.py text eol=lf
+
+# 3. 前端 JS 和配置文件也统一使用 LF
+*.js text eol=lf
+*.json text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+
+# 4. 文本说明文件
+*.md text eol=lf
+*.txt text eol=lf
+.gitignore text eol=lf
+requirements.txt text eol=lf
+
+# 5. 声明二进制文件 (不进行换行符转换)
+# 这样可以防止图片或字体文件在上传时损坏
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+
+# 6. 忽略特定的文件夹
+/config/** text eol=lf
