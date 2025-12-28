@@ -6,7 +6,7 @@
 
 ------
 
-![nodes](docs\nodes.jpg)
+![nodes](docs/nodes.jpg)
 
 ## ✨ 核心节点介绍
 
