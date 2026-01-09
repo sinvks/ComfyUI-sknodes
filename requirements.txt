@@ -1,5 +1,6 @@
 torch>=2.1.0
 numpy>=1.24.0,<2.0.0
 Pillow>=9.5.0
+opencv-python
 psutil
 aiohttp
